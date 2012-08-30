@@ -1,4 +1,130 @@
+@charset"UTF-8";
 /* 
 The stylesheet is made by Mario Onekanda, ©2012 juni 
+Green color: #a7bb12
+ */
+body {
+	font-family: 		trebuchet MS,verdana, Geneva, Arial, Helvetica, sans-serif;
+	width: 				auto;
+	height:				auto;
+	font-size:  		14px;
+	color: 				#333;
+	margin: 			0px;
+	padding: 			0px;
+	background:			#fff;
+}
+a{color: #fff; text-decoration: none;}
+.hover{ color: #333; text-decoration: underline;}
+a img{}
+a img .hover{}
+h1{}
+h2{}
+h3{}
+h4{}
+h5{}
+p{}
+body
+{
+font-family: 			
+}
+#wrapper
+{
+width: 				auto;
+height: 			auto;
+margin-right: 		auto;
+margin-left: 		auto;
+padding: 			0;	
+}
 
-*/
+#login
+{
+width:				500px;
+height: 			auto;
+margin-right: 		auto;
+margin-left: 		auto;	
+margin-top:			50px;
+border:				1px solid #999;
+padding:			10px;
+display: 			block;
+background: 		#999;
+position: 			relative;
+}
+
+#login h1
+{
+text-align: 		center;
+text-shadow: 		1px 1px #fff;	
+padding-bottom:		20px;
+}
+
+.password
+{
+width: 				160px;
+height:				auto;	
+margin-left: 		20px;
+margin-bottom: 		10px;		
+}
+
+.username	
+{
+width: 				160px;
+height:				auto;	
+margin-left: 		17px;	
+margin-bottom: 		10px;	
+}
+.mail
+{
+width: 				160px;
+height:				auto;	
+margin-left: 		53px;	
+margin-bottom: 		10px;	
+
+}
+.label-text
+{
+margin:				15px;	
+}
+#login a
+{
+	color:			#fff;
+	padding-left:		13px
+}
+#login a:hover
+{
+	color:			#a7bb12;
+	text-decoration: underline;
+}
+.submit
+{
+    background: 	none repeat scroll 0 0 black;
+    border: 		none;
+    color: 			#fff;
+    height: 		31px;
+    margin-left:	14px;
+    width: 			69px;
+    cursor: 		pointer;
+}
+.error-message
+{
+    color: 			#FF0000;
+    height: 		auto;
+    left: 			821px;
+    position: 		absolute;
+    top: 			240px;
+    width: 			auto;
+    z-index: 		5;
+	 	
+}
+
+.confirm-message
+{
+    color: 			#000;
+    height: 		auto;
+    left: 			821px;
+    position: 		absolute;
+    top: 			259px;
+    width: 			auto;
+    z-index: 		5;
+	 
+	
+}
