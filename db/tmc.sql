@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Värd: localhost
--- Skapad: 13 jun 2012 kl 15:00
+-- Skapad: 28 aug 2012 kl 08:56
 -- Serverversion: 5.5.16
 -- PHP-version: 5.3.8
 
@@ -101,7 +101,7 @@ CREATE TABLE IF NOT EXISTS `genres` (
 --
 
 INSERT INTO `genres` (`id`, `genre_name`, `about_genre`, `genre_date`) VALUES
-(1, 'gospel', '2012-06-13 00:00:00', '2012-06-13 00:00:00'),
+(1, 'gospel', 'lorem lipsummmmmlorem lipsummmmmlorem lipsummmmmlorem lipsummmmmlorem lipsummmmmlorem lipsummmmmlorem lipsummmmmlorem lipsummmmmlorem lipsummmmmlorem lipsummmmmlorem lipsummmmmlorem lipsummmmmlorem lipsummmmmlorem lipsummmmm', '2012-06-13 00:00:00'),
 (2, 'worship', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel erat lacus. Donec eget purus augue. Vivamus malesuada facilisis metus eget egestas. Curabitur pretium accumsan sollicitudin. Praesent sit amet fermentum leo. Vestibulum ante ipsum primis in faucibus orci ', '2012-06-13 00:00:00'),
 (3, 'rnb', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel erat lacus. Donec eget purus augue. Vivamus malesuada facilisis metus eget egestas. Curabitur pretium accumsan sollicitudin. Praesent sit amet fermentum leo. Vestibulum ante ipsum primis in faucibus orci ', '2012-06-13 00:00:00'),
 (4, 'rap', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel erat lacus. Donec eget purus augue. Vivamus malesuada facilisis metus eget egestas. Curabitur pretium accumsan sollicitudin. Praesent sit amet fermentum leo. Vestibulum ante ipsum primis in faucibus orci ', '2012-06-13 00:00:00'),
@@ -139,12 +139,12 @@ CREATE TABLE IF NOT EXISTS `songs` (
 --
 
 INSERT INTO `songs` (`id`, `song_name`, `song_date`, `album_id`) VALUES
-(1, 'intro', '2012-06-13 00:00:00', 0),
-(2, 'melody from heaven', '2012-06-13 00:00:00', 0),
-(3, 'jesus', '2012-06-13 00:00:00', 0),
-(4, 'draw me close to you', '2012-06-13 00:00:00', 0),
-(5, 'god is able', '2012-06-13 00:00:00', 0),
-(6, 'heaven', '2012-06-13 00:00:00', 2),
+(1, 'intro', '2012-06-13 00:00:00', 1),
+(2, 'melody from heaven', '2012-06-13 00:00:00', 3),
+(3, 'jesus', '2012-06-13 00:00:00', 1),
+(4, 'draw me close to you', '2012-06-13 00:00:00', 5),
+(5, 'god is able', '2012-06-13 00:00:00', 4),
+(6, 'heaven', '2012-06-13 00:00:00', 6),
 (7, 'potters hand', '2012-06-13 00:00:00', 4);
 
 -- --------------------------------------------------------
@@ -158,16 +158,27 @@ CREATE TABLE IF NOT EXISTS `users` (
   `username` varchar(44) NOT NULL,
   `password` varchar(44) NOT NULL,
   `mail` varchar(44) NOT NULL,
+  `users_date` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
 
 --
 -- Dumpning av Data i tabell `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `password`, `mail`) VALUES
-(1, 'mario', 'onekanda', 'mario.onekanda@gmal.com'),
-(2, 'joel', 'onekanda31', 'mario.onekanda@hotmail.com');
+INSERT INTO `users` (`id`, `username`, `password`, `mail`, `users_date`) VALUES
+(1, 'mario', '0', 'mario.onekanda@hotmail.com', '0000-00-00 00:00:00'),
+(2, 'onekanda', 'onekanda', 'info@gmail.com', '0000-00-00 00:00:00'),
+(3, 'mario', '123', '', '0000-00-00 00:00:00'),
+(4, 'mario2', '0', 'marionew@hotmail.com', '0000-00-00 00:00:00'),
+(5, 'mario5', '0', 'marionew@hotmail.com', '0000-00-00 00:00:00'),
+(6, 'joel', '0', 'joel@gmail.com', '0000-00-00 00:00:00'),
+(7, 'ekumani', 'cfcd208495d565ef66e7dff9f98764da', 'ekumani@gmail.com', '0000-00-00 00:00:00'),
+(8, 'onekanda', 'cfcd208495d565ef66e7dff9f98764da', 'mario.onekanda@hotmail.com', '0000-00-00 00:00:00'),
+(9, 'Mario', '202cb962ac59075b964b07152d234b70', '123', '0000-00-00 00:00:00'),
+(10, 'Mario', '202cb962ac59075b964b07152d234b70', 'mario.onekanda@hotmail.com', '0000-00-00 00:00:00'),
+(11, 'Joelonekanda', 'cfcd208495d565ef66e7dff9f98764da', 'mario.onekanda@hotmail.com', '0000-00-00 00:00:00'),
+(12, 'Joelonekanda', 'cfcd208495d565ef66e7dff9f98764da', 'mario.onekanda@hotmail.com', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
