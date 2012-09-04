@@ -25,7 +25,12 @@ h5{}
 p{}
 body
 {
-font-family: 			
+font-family: 		Arial, Helvetica, sans-serif;
+margin: 			0;
+padding:			0;
+color:				#000;
+background:			#fff;
+
 }
 #wrapper
 {
